@@ -23,6 +23,15 @@ background-size: cover;
 .table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
    background-color: rgba(255, 255, 255, 0.5);
 }
+.navbar-fixed-bottom {
+    height: 32px !important;
+    padding-top: 6px;
+    padding-right: 64px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar-fixed-bottom a {
+    color: #aaa;
+}
 
 /*
  * Landing page
