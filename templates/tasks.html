@@ -1,0 +1,32 @@
+<div class="landing-page container">
+
+  <div class="row">
+    {% for category in categories %}
+      <div class="chall-box chall-category col-md-1">
+        {{ category.name }}
+      </div>
+    {% endfor %}
+  </div>
+
+  {% for row in grid %}
+    <div class="row">
+    {% for task in row %}
+      {% if task %}
+        <a href="/tasks/{{ task.short_name|lower }}/{{ task.score }}">
+          <div class="chall-box chall-task col-md-1 {% if task.id in flags %}chall-done{% endif %}">
+            {{ task.short_name }}{{ task.score }}
+          </div>
+        </a>
+      {% else %}
+        <div class="chall-box chall-hidden col-md-1">
+          &nbsp;
+        </div>
+      {% endif %}
+    {% endfor %}
+    </div>
+  {% endfor %}
+  
+</div>
+
+<script src="{{ url_for('static', filename='js/tasks.js') }}" 
+    type='text/javascript'></script>

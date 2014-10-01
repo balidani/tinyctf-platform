@@ -1,0 +1,38 @@
+<div class="landing-page container">
+  <div class="row">
+    <div class="task-box col-md-6 col-md-offset-3" 
+      data-category="{{ category|lower }}" data-score="{{ score }}">
+      <h1>{{ task.name }}</h1>
+      <h5>({{ category }}{{ score }}, 
+        {{ lang.task.solution_format % solutions }})</h5>
+      <br/>
+      <p>
+        <b>{{ lang.task.description }}: </b>
+        {% if not task.desc %}
+          {{ lang.task.no_description }}
+        {% else %}
+          {{ task.desc|safe }}
+        {% endif %}
+      </p>
+      <p>
+        <b>{{ lang.task.attachment }}: </b>
+        <a href="{{ url_for('static', 
+          filename='files/'+task.file) }}">{{ task.file }}</a>
+      </p>
+      <input id="flag-input" type="text" class="form-control" 
+        placeholder="{% if task_done %}{{ lang.task.success }}{% 
+        else %}{{ lang.task.placeholder }}{% endif %}">
+      <button {% if task_done %}disabled{% endif %} id="flag-submission" 
+        type="button" class="btn btn-block 
+          {% if task_done %}
+            btn-success
+          {% else %}
+            btn-primary
+          {% endif %}">{{ lang.task.submit }}</button>
+    </div>
+  </div>
+</div>
+<span class="lang" data-success="{{ lang.task.success }}" 
+  data-failure="{{ lang.task.failure }}"></span>
+<script src="{{ url_for('static', filename='js/submit.js') }}" 
+    type='text/javascript'></script>

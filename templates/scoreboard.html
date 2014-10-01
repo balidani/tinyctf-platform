@@ -1,0 +1,20 @@
+<div class="landing-page container">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>&#35;</th>
+        <th>{{ lang.scoreboard.player }}</th>
+        <th>{{ lang.scoreboard.score }}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for user in scores %}
+      <tr>
+        <td>{{ loop.index }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.score }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>

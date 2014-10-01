@@ -1,0 +1,121 @@
+body {
+  background: transparent;
+}
+
+/*
+ * Some bootstrap overrides
+ */
+
+.full {
+background: url('../img/background.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+.table > thead > tr > th {
+   background-color: rgba(0, 0, 0, 0.5); 
+   color: #eee;
+}
+.table-striped > tbody > tr:nth-child(2n+1) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {
+   background-color: rgba(255, 255, 255, 0.75);
+}
+.table-striped > tbody > tr:nth-child(2n) > td, .table-striped > tbody > tr:nth-child(2n) > th {
+   background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+ * Landing page
+ */
+
+.landing-page {
+    padding-top: 100px;
+}
+
+.landing-page h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/*
+ * Main circle
+ */
+
+.circle {
+    margin: 0;
+    width:550px;
+    height:550px;
+    padding-top: 120px;
+    border-radius:50%;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.circle-inner {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 14pt;
+}
+
+.white {
+    color: #ddd; /* I lied */
+    padding-top: 8px;
+}
+
+/*
+ * Tasks page
+ */
+
+.chall-box {
+    margin: 20px;
+    width: 120px;
+    height: 120px;
+    padding-top: 45px;
+    border-radius: 50%;
+    text-align:center;
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 16pt;
+    color: #333;
+}
+
+.chall-category {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.chall-done {
+    -webkit-box-shadow: 0 0 10px 3px #51A351;
+    box-shadow: 0 0 10px 3px #51A351;
+}
+
+.chall-highlight {
+    -webkit-box-shadow: 0 0 10px 3px #0088CC;
+    box-shadow: 0 0 10px 3px #0088CC;
+}
+
+.chall-hidden {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/*
+ * Individual tasks
+ */
+
+.task-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding-bottom: 20px;
+    width: 600px;
+}
+
+.task-box input {
+    margin-bottom: 8px;
+}
+
+.task-box h1 {
+    padding-bottom: 0px;
+}
+
+.task-box h5 {
+    text-align: center;
+}

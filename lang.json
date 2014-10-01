@@ -1,0 +1,50 @@
+{
+    "english": {
+        "frame": {
+            "title": "tinyCTF",
+            "toggle": "Toggle navigation",
+            "login": "Sign in",
+            "register": "Register",
+            "logged_in": "Logged in as",
+            "logout": "log out"
+        },
+        "main": {
+            "title": "Hello World!",
+            "text": "Welcome text goes here"
+        },
+        "about": {
+            "title": "About",
+            "news": "News",
+            "news_text": "News go here",
+            "rules": "Rules",
+            "rules_text": "Rules go here"
+        },
+        "tasks": {
+            "title": "Tasks"
+        },
+        "task": {
+            "description": "Description",
+            "attachment": "Attachment",
+            "submit": "Submit",
+            "success": "Correct flag!",
+            "failure": "Incorrect flag",
+            "solution_format": "solved by %d",
+            "no_description": "(none)",
+            "placeholder": "flag{insert_flag_here}"
+        },
+        "scoreboard": {
+            "title": "Scoreboard",
+            "player": "Player",
+            "score": "Score"
+        },
+        "error": {
+            "title": "Error",
+            "unknown": "Unknown error",
+            "login_required": "You need to be logged in to see this page",
+            "invalid_credentials": "Invalid username or password",
+            "already_registered": "This user is already registered",
+            "empty_user": "Empty username is not allowed",
+            "task_not_found": "TBD"
+        }
+    }
+}
