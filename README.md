@@ -42,6 +42,8 @@ Start the server
 
 *Note*: Flask should run on top of a proper web server if you plan to have many players.
 
+Some deployment steps are also provided for ArchLinux on the [wiki](https://github.com/balidani/tinyctf-platform/wiki/Installation-on-ArchLinux).
+
 Caveats
 -------
 
